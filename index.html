@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hình Ảnh</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        a {
+            margin: 10px;
+            flex: 1 1 calc(25% - 20px);
+            box-sizing: border-box;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        @media (max-width: 768px) {
+            a {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            a {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="img/band.png" target="_blank">
+        <img src="img/band.png" alt="band">
+    </a>
+    <a href="img/test2.png" target="_blank">
+        <img src="img/test2.png" alt="whoer 1">
+    </a>
+    <a href="img/test3.png" target="_blank">
+        <img src="img/test3.png" alt="whoer 2">
+    </a>
+    <a href="img/test.png" target="_blank">
+        <img src="img/test.png" alt="whoer 3">
+    </a>
+</body>
+</html>
